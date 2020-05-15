@@ -24,6 +24,21 @@
             <ul>
                 <li><a href="list.php">Liste</a></li>
                 <li><a href="add.php">Ajouter</a></li>
+                <?php 
+                    $info = file_get_contents("login.json");
+                    $tabInfo = json_decode($info, true);
+                    if($tabInfo['login'] == false){
+                        echo("<li><a href=\"login.php\">Login</a></li>");
+                    }
+                    else{
+                        echo("
+                        <li><a href=\"login.php\">Admin</a></li>
+                        <form action=\"deco.php\" method=\"get\">
+                        <button>Deconnexion<button>
+                        </form>
+                        ");
+                    }
+                ?>
             </ul>
         </nav>
     </header>

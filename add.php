@@ -4,7 +4,7 @@ $monCss[] = './css/add.css';
 
 include("./phtml/head.phtml");
 include("./phtml/mainAdd.phtml");
-var_dump($_GET);
+//var_dump($_GET);
 if(!empty($_GET)){
     $contJson = file_get_contents("test.json");
     if(!empty($contJson)){
