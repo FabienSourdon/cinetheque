@@ -17,6 +17,7 @@ nav{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .title{
@@ -30,8 +31,13 @@ nav{
     margin-left: 10px;
 }
 
+nav>form{
+    width: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 nav>ul{
-    width: 50vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
