@@ -1,0 +1,22 @@
+<main>
+    <h2>Ajouter un film</h2>
+    <form action="add.php" method="get">
+        <div class="divForm">
+            <label for="title">Titre :</label>
+            <input type="text" name="title">
+        </div>
+        <div class="divForm">
+            <label for="image">Image :</label>
+            <input type="file" accept=".jpg, .gif, .png" name="image">
+        </div>
+        <div class="divForm">
+            <label for="desc">Description :</label>
+            <textarea name="desc" id="descFilm" cols="30" rows="10"></textarea>
+        </div>
+        <div class="divForm">
+            <label for="date">Date de sortie :</label>
+            <input type="date" name="date">
+        </div>
+        
+        <button>Ajouter</button>
+    </form>

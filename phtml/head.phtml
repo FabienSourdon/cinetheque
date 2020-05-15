@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php 
+        foreach($monCss as $value){
+            echo('<link rel="stylesheet" href="'.$value.'">');
+        }
+    ?>
+    <title>Cinéthèque</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <section class= "title">
+                <img src="./img/logo.png" alt="Logo">
+                <h1>Ma Cinéthèque</h1>
+            </section>
+            <ul>
+                <li><a href="list.php">Liste</a></li>
+                <li><a href="add.php">Ajouter</a></li>
+            </ul>
+        </nav>
+    </header>
