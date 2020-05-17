@@ -23,8 +23,8 @@ if($tabIfLogin['login']){
                 <p>'.$tmpTab[$i]['date'].'</p>
             </div>
             <p>'.$tmpTab[$i]['desc'].'
-            <form action="#" method="get">
-                <button>Modifier<button>
+            <form action="edit.php" method="get">
+                <button name="edit" value="'. $tmpTab[$i]['title'] .'">Modifier<button>
             </form>
             <form action="supp.php" method="get" name="testToto">
                 <button name="sup" value="'. $tmpTab[$i]['title'] .'">Supprimer<button>
@@ -48,8 +48,6 @@ else{
     }
 }
 
-
-//var_dump($_GET);
 include("./phtml/footList.phtml"); 
 
 ?>
